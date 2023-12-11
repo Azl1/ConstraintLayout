@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    >
 
 
     <TextView
@@ -13,24 +13,26 @@
         android:layout_width="382dp"
         android:layout_height="59dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/layoutHorizontal1"
+        app:layout_constraintBottom_toTopOf="@+id/horisontal1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/layoutHorizontal1"
-        android:layout_width="421dp"
-        android:layout_height="66dp"
+        android:id="@+id/horisontal1"
+        android:layout_width="408dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="101dp"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        >
+        app:layout_constraintBottom_toTopOf="@+id/vertical1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <TextView
             android:id="@+id/textView1"
@@ -104,68 +106,69 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutVertical1"
-        android:layout_width="66dp"
-        android:layout_height="284dp"
-        app:layout_constraintTop_toBottomOf="@id/layoutHorizontal1"
+        android:id="@+id/vertical1"
+        android:layout_width="75dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="165dp">
+        app:layout_constraintEnd_toStartOf="@+id/vertical2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horisontal1">
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="A" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="b" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="d" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="u" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="l" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="l" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="a" />
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="e" />
 
@@ -179,20 +182,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutVertical2"
-        android:layout_width="66dp"
-        android:layout_height="279dp"
+        android:id="@+id/vertical2"
+        android:layout_width="61dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="167dp"
-
-
-        app:layout_constraintBottom_toBottomOf=""
-        app:layout_constraintEnd_toEndOf=""
-        app:layout_constraintStart_toStartOf=""
-        app:layout_constraintTop_toBottomOf=""
-        >
+        app:layout_constraintEnd_toStartOf="@+id/vertical3"
+        app:layout_constraintStart_toEndOf="@+id/vertical1"
+        app:layout_constraintTop_toBottomOf="@+id/horisontal1">
 
         <Button
             android:id="@+id/clear"
@@ -215,19 +213,20 @@
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:text="7" />
-
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutVertical3"
-        android:layout_width="67dp"
-        android:layout_height="282dp"
+        android:id="@+id/vertical3"
+        android:layout_width="61dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="165dp">
+        app:layout_constraintEnd_toStartOf="@+id/vertical4"
+        app:layout_constraintStart_toEndOf="@+id/vertical2"
+        app:layout_constraintTop_toBottomOf="@+id/horisontal1">
 
         <Button
             android:id="@+id/buttonMinus1"
@@ -255,13 +254,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutVertical4"
-        android:layout_width="65dp"
-        android:layout_height="282dp"
+        android:id="@+id/vertical4"
+        android:layout_width="61dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="165dp">
+        app:layout_constraintEnd_toStartOf="@+id/vertical5"
+        app:layout_constraintStart_toEndOf="@+id/vertical3"
+        app:layout_constraintTop_toBottomOf="@+id/horisontal1">
 
         <Button
             android:id="@+id/buttonPercent"
@@ -284,18 +285,21 @@
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:text="9" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutHorizontal4"
-        android:layout_width="63dp"
-        android:layout_height="280dp"
+        android:id="@+id/vertical5"
+        android:layout_width="61dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="283dp"
-        tools:layout_editor_absoluteY="165dp">
+        app:layout_constraintEnd_toStartOf="@+id/vertical6"
+        app:layout_constraintStart_toEndOf="@+id/vertical4"
+        app:layout_constraintTop_toBottomOf="@+id/horisontal1">
+
 
         <Button
             android:id="@+id/division"
@@ -318,59 +322,62 @@
         <Button
             android:id="@+id/buttonPlus"
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:text="+" />
+
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutHorizontal5"
-        android:layout_width="70dp"
-        android:layout_height="285dp"
+        android:id="@+id/vertical6"
+        android:layout_width="75dp"
+        android:layout_height="305dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="351dp"
-        tools:layout_editor_absoluteY="165dp">
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertical5"
+        app:layout_constraintTop_toBottomOf="@+id/horisontal1">
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="match_parent"
-            android:layout_height="29dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="A" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="match_parent"
-            android:layout_height="29dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="b" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="match_parent"
-            android:layout_height="29dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="d" />
 
         <TextView
             android:id="@+id/textView22"
             android:layout_width="match_parent"
-            android:layout_height="29dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="u" />
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="l" />
 
         <TextView
             android:id="@+id/textView24"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="l" />
 
@@ -384,60 +391,64 @@
         <TextView
             android:id="@+id/textView26"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             android:gravity="center"
             android:text="e" />
 
         <TextView
             android:id="@+id/textView27"
             android:layout_width="match_parent"
-            android:layout_height="29dp"
+            android:layout_height="23dp"
             android:gravity="center"
             android:text="v" />
-
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutHorizontal2"
-        android:layout_width="420dp"
-        android:layout_height="63dp"
+        android:id="@+id/horizontal2"
+        android:layout_width="408dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="451dp"
-        android:layout_below="@+id/layoutVertical1"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vertical1">
 
         <Button
             android:id="@+id/button0"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="0" />
 
         <Button
             android:id="@+id/buttonPoint"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="." />
 
         <Button
             android:id="@+id/buttonEquals"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="=" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layoutHorizontal3"
-        android:layout_width="420dp"
-        android:layout_height="63dp"
+        android:id="@+id/horizontal3"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="514dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal2">
 
         <TextView
             android:id="@+id/textView28"
@@ -509,5 +520,130 @@
             android:gravity="center"
             android:text="v" />
     </LinearLayout>
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutHorizontal1"-->
+<!--        android:layout_width="408dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginTop="76dp"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textView">-->
+
+
+<!--    </LinearLayout>-->
+
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutVertical2"-->
+<!--        android:layout_width="67dp"-->
+<!--        android:layout_height="285dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/layoutHorizontal2"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/layoutVertical3"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/layoutVertical1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/layoutHorizontal1"></LinearLayout>-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutVertical3"-->
+<!--        android:layout_width="67dp"-->
+<!--        android:layout_height="285dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/layoutHorizontal2"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/layoutVertical4"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/layoutVertical2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/layoutHorizontal1"></LinearLayout>-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutVertical4"-->
+<!--        android:layout_width="67dp"-->
+<!--        android:layout_height="285dp"-->
+<!--        android:layout_marginStart="1dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/layoutHorizontal2"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/layoutVertical4"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/layoutVertical3"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/layoutHorizontal1">>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutVertical6"-->
+<!--            android:layout_width="67dp"-->
+<!--            android:layout_height="285dp"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+
+
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutHorizontal2"-->
+<!--        android:layout_width="408dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_below="@+id/layoutVertical1"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="501dp">-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutHorizontal3"-->
+<!--        android:layout_width="408dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginStart="2dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="566dp">-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutVertical4"-->
+<!--        android:layout_width="67dp"-->
+<!--        android:layout_height="285dp"-->
+<!--        android:layout_marginStart="-5dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.994"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.58">-->
+
+
+<!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
