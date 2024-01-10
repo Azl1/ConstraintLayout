@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button visible, inVisible;
 
-    Button mc, mr, ms, mPlus, mMinus;
+    Button memoryClear, memoryRead, memorySave, mPlus, mMinus;
 
 
 
@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         visible.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mc.setVisibility(View.VISIBLE);
-                mr.setVisibility(View.VISIBLE);
-                ms.setVisibility(View.VISIBLE);
+                memoryClear.setVisibility(View.VISIBLE);
+                memoryRead.setVisibility(View.VISIBLE);
+                memorySave.setVisibility(View.VISIBLE);
                 mPlus.setVisibility(View.VISIBLE);
                 mMinus.setVisibility(View.VISIBLE);
             }
@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         inVisible.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mc.setVisibility(View.INVISIBLE);
-                mr.setVisibility(View.INVISIBLE);
-                ms.setVisibility(View.INVISIBLE);
+                memoryClear.setVisibility(View.INVISIBLE);
+                memoryRead.setVisibility(View.INVISIBLE);
+                memorySave.setVisibility(View.INVISIBLE);
                 mPlus.setVisibility(View.INVISIBLE);
                 mMinus.setVisibility(View.INVISIBLE);
             }
@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         visible = findViewById(R.id.buttonVisible);
         inVisible = findViewById(R.id.buttonInVisible);
 
-        mc = findViewById(R.id.buttonMC);
-        mr = findViewById(R.id.buttonMR);
-        ms = findViewById(R.id.buttonMS);
+        memoryClear = findViewById(R.id.buttonMC);
+        memoryRead = findViewById(R.id.buttonMR);
+        memorySave = findViewById(R.id.buttonMS);
         mPlus = findViewById(R.id.buttonMPlus);
         mMinus = findViewById(R.id.buttonMMinus);
     }
